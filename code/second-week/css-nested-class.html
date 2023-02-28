@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Nested-Class</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .temp:nth-child(2n) {
+            font-weight: bold;
+        }
+
+        .temp:nth-child(2n + 1) {
+            font-size: 2rem;
+        }
+
+        .temp:first-child {
+            color: red;
+        }
+
+        .temp:last-child {
+            color: blue;
+        }
+        .before::before {
+            content: "앞에";
+            color: blue;
+        }
+        .after::after {
+            content: "있어요!";
+            color: red;
+        }
+        .hover {
+            padding: 20px;
+            background-color: yellow;
+        }
+        .hover:hover {
+            background-color: red;
+        }
+        .isInYello {
+            margin-top: 20px;
+        }
+        .isInYello div:not(:last-child) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="temp">안녕하세요</div>
+        <div class="temp">안녕하세요</div>
+        <div class="temp">안녕하세요</div>
+        <div class="temp">안녕하세요</div>
+        <div class="temp">안녕하세요</div>
+        <div class="temp">안녕하세요</div>
+        <div class="temp">안녕하세요</div>
+    </div>
+    <div>
+        <div class="before">있어요!</div>
+        <div class="after">뒤에</div>
+    </div>
+    <div>
+        <div class="hover">마우스를 올려보세요!!</div>
+    </div>
+    <div class="isInYello">
+        <div>노란색일까요?</div>
+        <div>노란색일까요?</div>
+        <div>노란색일까요?</div>
+        <div>노란색일까요?</div>
+        <div>노란색일까요?</div>
+        <div>전 아니죠!!</div>
+    </div>
+</body>
+
+</html>

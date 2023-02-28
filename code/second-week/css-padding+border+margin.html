@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Padding+Border+Margin</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .point-content {
+            font-size: 1.2rem;
+        }
+        .point-content > span{
+            font-weight: 700;
+            color: blue
+        }
+        .m-20px {
+            margin: 20px;
+        }
+        .p-20px {
+            padding :20px;
+        }
+        .b-10px {
+            border: 10px solid blue;
+        }
+        .box {
+            background-color: #303030;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS의 요소의 크기는 크게 3가지로 다루는 편이죠.</h1>
+    <div class="point-content"><span>margin</span>과 <span>border</span>과 <span>margin</span>이랍니다.</div>
+    <div>
+        <div class="m-20px box"> 이 요소는 상하좌우 20px식 margin을 준 것입니다.</div>
+        <div class="b-10px box"> 이 요소는 상화좌우 10px식 border을 준 것입니다.</div>
+        <div class="p-20px box"> 이 요소는 상하좌우 20px식 padding을 준 것입니다.</div>
+    </div>
+    <div>
+        <div class="m-20px box"> 이 요소는 상하좌우 20px식 margin을 준 것입니다.</div>
+        <div class="m-20px box"> 이 요소는 상하좌우 20px식 margin을 준 것입니다.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-SELECTOR</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .bg-black {
+            background-color: #303030;
+            color: #c0c0c0;
+        }
+
+        .bg-mint {
+            background-color: #00ffff;
+        }
+
+        .descendant-bold div {
+            font-weight: bold;
+        }
+
+        .bg-black>.text-white {
+            color: white;
+        }
+
+        .bg-black>.text-yellow {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>안녕하세요</div>
+    <div>반갑습니다</div>
+    <div class="bg-black descendant-bold">
+        사실 자손들은 모두 bold처리 되어 있답니다!!(저는 제외이죠 하하)
+        <div class="text-white">여기는 black안에 흰색입니다! 까만색일때만 가능하답니다.</div>
+        <div class="text-yellow">여기는 black안에 노란색이에요!! 까만색일때만 가능하답니다.</div>
+    </div>
+    <div class="bg-mint">
+        <div class="text-white">여기는 black안에 흰색입니다! 까만색일때만 가능하답니다.</div>
+        <div class="text-yellow">여기는 black안에 노란색이에요!! 까만색일때만 가능하답니다.</div>
+    </div>
+</body>
+
+</html>
