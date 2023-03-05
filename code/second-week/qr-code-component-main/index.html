@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>QR code component</title>
   <style>
     body {
+      font-family: 'Lato', sans-serif;
       background-color: #D8E1EE;
       text-align: center;
       display: flex;
@@ -17,19 +19,22 @@
       height: 100vh;
     }
     .card {
-      background-color: red; /* 이 줄을 수정해 주세요!! */
+      background-color: white; 
       border-radius: 1rem;
-      /* 여기에 코드를 작성해 주세요!! */
+      width: 15rem;
+      padding: 1rem;
     }
     .qr-img {
-      width: 10rem; /* 이 줄을 수정해 주세요!! */
+      width: 14rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
     }
     .title {
-      font-weight: bold;
-      /* 여기에 코드를 작성해 주세요!!*/
+      font-weight: 1000;
+      margin-bottom: 0.5rem;
     }
     .subtitle{
-      /* 여기에 코드를 작성해 주세요!! */
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -37,10 +42,10 @@
 <body>
   <div class="card">
     <img class="qr-img" src="./images/image-qr-code.png" alt="QR code">
-    <div class="title">
+    <div class="title" style="color: #06147c">
       Improve your front-end skills by building projects
     </div>
-    <div class="suttitle">
+    <div class="suttitle" style="color: gray">
       Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
     </div>
   </div>
