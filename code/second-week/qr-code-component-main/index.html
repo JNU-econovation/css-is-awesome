@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>QR code component</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+      body {
+        background-color: #d8e1ee;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      .card {
+        background-color: white; /* 이 줄을 수정해 주세요!! */
+        border-radius: 1rem;
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>QR code component</title>
-  <style>
-    body {
-      background-color: #D8E1EE;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-    }
-    .card {
-      background-color: red; /* 이 줄을 수정해 주세요!! */
-      border-radius: 1rem;
-      /* 여기에 코드를 작성해 주세요!! */
-    }
-    .qr-img {
-      width: 10rem; /* 이 줄을 수정해 주세요!! */
-    }
-    .title {
-      font-weight: bold;
-      /* 여기에 코드를 작성해 주세요!!*/
-    }
-    .subtitle{
-      /* 여기에 코드를 작성해 주세요!! */
-    }
-  </style>
-</head>
+        /* 여기에 코드를 작성해 주세요!! */
+        width: 20rem;
+        height: 31rem;
+        box-shadow: 0rem 3rem 5rem -5rem hsl(220, 15%, 55%);
+      }
+      .qr-img {
+        width: 18rem;
+        border-radius: 1rem; /* 이 줄을 수정해 주세요!! */
+        margin-top: 1rem;
+      }
+      .title {
+        font-weight: bold;
+        /* 여기에 코드를 작성해 주세요!!*/
+        font-size: 20px;
+        font-family: "Outfit", sans-serif;
+        color: hsl(218, 44%, 22%);
+        margin: 1rem 1.8rem;
+      }
+      .subtitle {
+        /* 여기에 코드를 작성해 주세요!! */
+        font-family: "Outfit", sans-serif;
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+        margin: 1rem 2rem;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="card">
-    <img class="qr-img" src="./images/image-qr-code.png" alt="QR code">
-    <div class="title">
-      Improve your front-end skills by building projects
+  <body>
+    <div class="card">
+      <img class="qr-img" src="./images/image-qr-code.png" alt="QR code" />
+      <div class="title">
+        Improve your front-end skills by building projects
+      </div>
+      <div class="subtitle">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </div>
     </div>
-    <div class="suttitle">
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
