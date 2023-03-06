@@ -8,28 +8,43 @@
   <title>QR code component</title>
   <style>
     body {
-      background-color: #D8E1EE;
-      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100vw;
       height: 100vh;
+      width: 100vw;
+      background-color: #D8E1EE;
+      text-align: center;
     }
+
     .card {
-      background-color: red; /* 이 줄을 수정해 주세요!! */
-      border-radius: 1rem;
-      /* 여기에 코드를 작성해 주세요!! */
+      /* width: 210px; */
+      width: 25%;
+      max-width: 310px;
+      min-width: 200px;
+      padding: 10px;
+      padding-bottom: 30px;
+      background-color: white;
+      border-radius: 1em;
     }
+
     .qr-img {
-      width: 10rem; /* 이 줄을 수정해 주세요!! */
+      /* width: 13rem; */
+      width: 90%;
+      max-width: 260px;
+      min-width: 160px;
+      border-radius: 1rem;
     }
+
     .title {
+      font-size: 15px;
       font-weight: bold;
-      /* 여기에 코드를 작성해 주세요!!*/
+      padding: 10px;
     }
-    .subtitle{
-      /* 여기에 코드를 작성해 주세요!! */
+
+    .subtitle {
+      color: grey;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -40,7 +55,7 @@
     <div class="title">
       Improve your front-end skills by building projects
     </div>
-    <div class="suttitle">
+    <div class="subtitle">
       Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
     </div>
   </div>

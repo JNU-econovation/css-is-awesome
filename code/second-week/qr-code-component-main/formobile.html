@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>QR code component</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #D8E1EE;
+            text-align: center;
+        }
+
+        .card {
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 1em;
+        }
+
+        .qr-img {
+            width: 100%;
+            max-width: 13rem;
+            height: auto;
+            border-radius: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: grey;
+            font-size: 1rem;
+        }
+
+        /* Media queries for tablet and mobile */
+        @media only screen and (max-width: 768px) {
+            .card {
+                width: 80%;
+            }
+
+            .qr-img {
+                max-width: 10rem;
+            }
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .card {
+                width: 90%;
+                max-width: 300px;
+            }
+
+            .qr-img {
+                max-width: 8rem;
+            }
+
+            .title {
+                font-size: 1rem;
+            }
+
+            .subtitle {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="qr-img" src="./images/image-qr-code.png" alt="QR code">
+        <div class="title">
+            Improve your front-end skills by building projects
+        </div>
+        <div class="subtitle">
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </div>
+    </div>
+</body>
+
+</html>
