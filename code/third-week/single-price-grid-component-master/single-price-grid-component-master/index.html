@@ -2,49 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>3주차 CSS 스터디 과제</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: #E6EFF6;
+    }
+
+    .parent {
+      width: 636px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Karla', sans-serif;
+    }
+
+    .top {
+      background-color: white;
+      height: 215px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .title {
+      font-size: 24px;
+      padding: 40px 0px 25px;
+    }
+
+    .sub-title {
+      padding-bottom: 18px;
+    }
+
+    .detail {
+      color: hsl(218, 22%, 67%);
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    .left {
+      border-radius: 0px 0px 0px 10px;
+    }
+
+    .white-title {
+      margin-bottom: 15px;
+    }
+
+    .white-detail {
+      font-size: 13px;
+      line-height: 19px;
+      margin: 1rem 0rem 1.7rem;
+    }
+
+    .point {
+      font-size: 28px;
+    }
+
+    .sub-point {
+      padding-left: 6px;
+    }
+
+    .right {
+      border-radius: 0px 0px 10px 0px;
+    }
+  
+    .button {
+      border: none;
+      border-radius: 5px;
+      padding: 15px 30px;
+      width: 100%;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .pl-40px {
+      padding-left: 40px;
+    }
+
+    .middle-title {
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .bottom-box {
+      height: 180px;
+      width: 238px;
+      float: left;
+      padding: 40px;
+    }
+
+    .white-title.middle-title{
+      margin-bottom: 15px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .light-green{
+      color: #BFDF32;
+    }
+
+    .text-ocean{
+      color: #2BB3B1;
+    }
+
+    .bg-ocean{
+      background-color: #2BB3B1;
+    }
+
+    .botton-light-green{
+      background-color: #BFDF32;
+    }
+
+    .bg-light-ocean{
+      background-color: #4ABEBD;
+    }
   </style>
 </head>
+
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="parent">
+    <div class="top pl-40px">
+      <div class="title bold text-ocean"> Join our community</div>
+      <div class="sub-title middle-title light-green">
+        30-day, hassle-free money back guarantee
+      </div>
+      <div class="detail">
+        Gain access to our full library of tutorials along with expert code reviews.<br>
+        Perfect for any developers who are serious about honing their skills.
+      </div>
+    </div>
+    <div class="left text-white bottom-box bg-ocean">
+      <div class="white-title middle-title">Monthly Subscription</div>
+      <span class="point bold">&dollar;29</span>
+      <span class="sub-point">per month</span>
+      <div class="white-detail ">Full access for less than &dollar;1 a day</div>
+      <button type="button" class="button text-white botton-light-green">Sign Up</button>
+    </div>
+    <div class="right text-white bottom-box bg-light-ocean">
+      <div class="white-title middle-title">Why Us</div>
+      <div class="white-detail">
+        Tutorials by industry experts<br>
+        Peer &amp; expert code review<br>
+        Coding exercises<br>
+        Access to our GitHub repos<br>
+        Community forum<br>
+        Flashcard decks<br>
+        New videos every week
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
