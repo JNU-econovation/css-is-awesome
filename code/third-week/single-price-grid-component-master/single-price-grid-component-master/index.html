@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: #d8e1ee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      .card {
+        background-color: grey;
+        border-radius: 0.8rem;
+        width: 50rem;
+        height: 35rem;
+        box-shadow: 0rem 3rem 5rem -5rem hsl(220, 15%, 55%);
+      }
+      .top-box {
+        display: flex;
+        height: 45%;
+      }
+      .join-section {
+        background-color: white;
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        padding: 3rem;
+      }
+      .join-title {
+        color: hsl(179, 62%, 43%);
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+        font-family: "Outfit", sans-serif;
+      }
+      .join-subtitle {
+        color: hsl(71, 73%, 54%);
+        font-size: 1.2rem;
+        margin-bottom: 1.4rem;
+        font-weight: bold;
+      }
+      .join-description {
+        color: hsl(220, 10%, 70%);
+
+        font-size: 1.2rem;
+      }
+      .bottom-box {
+        display: flex;
+        height: 55%;
+      }
+      .bottom-box-title {
+        font-size: 1.3rem;
+        /* font-weight: bold; */
+        margin-bottom: 1.2rem;
+        font-family: "Outfit", sans-serif;
+      }
+      .subscription-section {
+        color: white;
+        width: 50%;
+        flex: left;
+        background-color: hsl(179, 62%, 43%);
+        padding: 3rem;
+        border-radius: 0 0 0 0.8rem;
+      }
+      .subscription-description {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        color: hsla(216, 10%, 100%, 0.8);
+      }
+      .subscription-amount-number {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+        color: white;
+      }
+      .subscription-amount-month {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: hsla(216, 10%, 100%, 0.4);
+      }
+      .subscription-button {
+        width: 100%;
+        padding: 1rem;
+        background-color: hsl(71, 73%, 54%);
+        color: white;
+        font-size: 1rem;
+        border-color: white;
+        border-radius: 0.5rem;
+        font-weight: bold;
+      }
+      .why-section {
+        color: white;
+        width: 50%;
+        flex: right;
+        background-color: hsl(179, 80%, 43%);
+        padding: 3rem;
+        border-radius: 0 0 0.8rem 0;
+      }
+      .why-subscription {
+        color: hsla(216, 10%, 100%, 0.6);
+        margin-bottom: 0.2rem;
+        font-size: 1.05rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top-box">
+        <div class="join-section">
+          <div class="join-title">Join our community</div>
+          <div class="join-subtitle">
+            30-day, hassle-free money back guarantee
+          </div>
+          <div class="join-description">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </div>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="subscription-section">
+          <div class="bottom-box-title">Monthly Subscription</div>
+          <div class="subscription-description">
+            <div class="subscription-amount-number">&dollar;29</div>
+            <div class="subscription-amount-month">per month</div>
+            <div>Full access for less than &dollar;1 a day</div>
+          </div>
+          <button class="subscription-button">Sign Up</button>
+        </div>
+        <div class="why-section">
+          <div class="bottom-box-title">Why Us</div>
+          <div>
+            <div class="why-subscription">Tutorials by industry experts</div>
+            <div class="why-subscription">Peer &amp; expert code review</div>
+            <div class="why-subscription">Coding exercises</div>
+            <div class="why-subscription">Access to our GitHub repos</div>
+            <div class="why-subscription">Community forum</div>
+            <div class="why-subscription">Flashcard decks</div>
+            <div class="why-subscription">New videos every week</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/MINJOO-KIM">MINJOO-KIM</a>.
+      </p>
+    </footer>
+  </body>
+</html>
