@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 227, 227);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.main {
+  background-color: white;
+  color: white;
+  width: 600px;
+  border-radius: 0.5rem;
+}
+
+.main-content {
+  padding: 40px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: hsl(179, 62%, 43%);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.paragraph {
+  color: hsl(204, 43%, 93%);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+}
+
+.first {
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 0.5rem;
+}
+
+.second {
+  background-color: hsl(179, 57%, 54%);
+  width: 50%;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.sub-content {
+  margin-top: 15px;
+  color: hsl(204, 43%, 93%);
+  font-size: 0.8rem;
+}
+
+.dollar {
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.dollar-number {
+  font-size: 1.8rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.month {
+  display: inline-block;
+  padding-left: 15px;
+  color: hsl(204, 43%, 93%);
+  font-size: 0.8rem;
+}
+
+.explain {
+  margin-top: 5px;
+  font-size: 13px;
+  float: left;
+}
+
+.sign-up {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+}
