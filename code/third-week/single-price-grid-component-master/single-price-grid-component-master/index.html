@@ -3,47 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@100;400&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      font-family: 'Lato';
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      width: 1440px;
+      height: 720px;
+      align-items: center;
+      justify-content: center;
+      background-color:#e6eff6;
+    }
+    button {
+      margin: 0;
+      padding: 0.5rem 1rem;
+
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+
+      display: inline-block;
+      width: auto;
+
+      border: none;
+      border-radius: 4px;
+    }
+    footer {
+      padding-top: 30px;
+    }
+    .card {
+      display: flex;
+      justify-content: center;
+      flex-basis: 100%;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 720px;
+      box-shadow: 0px 0px 20px gray;
+    }
+    .item {
+      padding: 30px;
+      flex-basis: 100%;
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .basic-text {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      line-height: 28px;
+    }
+    .box {
+      display: flex;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    #community {
+      background-color: #ffffff;
+    }
+    #subscription {
+      background-color: #2bb3b1;
+    }
+    #why-us {
+      background-color: #4abebd;
+    }
+    #community-title {
+      color: #61c9c9;
+    }
+    #community-subtitle {
+      color: #bfdf32;
+    }
+    #community-text {
+      color: #c3c9d3;
+    }
+    #why-text {
+      margin-bottom: 0px;
+    }
+    #dollar-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+    #dollar {
+      font-size: 36px;
+      font-weight: bold;
+      padding-right: 12px;
+    }
+    #per-month {
+      font-size: 16px;
+      font-weight: lighter;
+    }
+    #sign-up-btn {
+      width: 100%;
+      height: 48px;
+      color: #ffffff;
+      background-color: #bfdf32;
+    }
   </style>
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
+    <div class="container">
+      <div class="card">
+        <div id="community" class="item">
+          <div id="community-title" class="title">Join our community</div>
+          <div id="community-subtitle" class="subtitle">30-day, hassle-free money back guarantee</div>
+          <div id="community-text" class="basic-text">Gain access to our full library of tutorials along with expert code reviews.
+            <br> Perfect for any developers who are serious about honing their skills.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div id="subscription" class= "item">
+          <div id="why-subtitle" class="subtitle">Monthly Subscription</div>
+          <div id="dollar-text">
+            <div id="dollar">&dollar;29</div>
+            <div id="per-month">per month</div>
+          </div>
+          <div id="why-subtitle" class="basic-text">Full access for less than &dollar;1 a day</div>
+          <div>
+            <button id="sign-up-btn">Sign Up</button>
+          </div>
+        </div>
+        <div id="why-us" class = "item">
+          <div id = "why-subtitle" class="subtitle">Why Us</div>
+            <div id = "why-text" class="basic-text">
+              Tutorials by industry experts<br>
+              Peer &amp; expert code review<br>
+              Coding exercises<br>
+              Access to our GitHub repos<br>
+              Community forum<br>
+              Flashcard decks<br>
+              New videos every week
+          </div>
+        </div>
+      </div>
+    </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#https://github.com/mywnajsldkf">mywnajsldkf</a>
     </p>
   </footer>
 </body>
