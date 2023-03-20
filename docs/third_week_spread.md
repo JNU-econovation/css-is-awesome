@@ -19,8 +19,8 @@
 [MDN(position)](https://developer.mozilla.org/en-US/docs/Web/CSS/position)  
 [짐코딩(position)](https://www.youtube.com/watch?v=Nq4WblZ1VXY&list=PLlaP-jSd-nK-ponbKDjrSn3BQG9MgHSKv&index=29)  
 [ofcourse(position)](https://ofcourse.kr/css-course/position-%EC%86%8D%EC%84%B1)  
-[디자이너스(position)](https://www.youtube.com/watch?v=gdo-KlJZ7u0&list=PLkbzizJk4Ae_ZCinIZzwLf4XDh1NvjmyE&index=12)  
-[디자이너스(z-index)](https://www.youtube.com/watch?v=3haIzH9KuBE&list=PLkbzizJk4Ae_ZCinIZzwLf4XDh1NvjmyE&index=13)  
+[디자인베이스(position)](https://www.youtube.com/watch?v=gdo-KlJZ7u0&list=PLkbzizJk4Ae_ZCinIZzwLf4XDh1NvjmyE&index=12)  
+[디자인베이스(z-index)](https://www.youtube.com/watch?v=3haIzH9KuBE&list=PLkbzizJk4Ae_ZCinIZzwLf4XDh1NvjmyE&index=13)  
 [Dale(position)](https://www.daleseo.com/css-position/)  
 [Dale(absolute positon)](https://www.daleseo.com/css-position-absolute/)  
 [Dale(fixed position)](https://www.daleseo.com/css-position-fixed/)  
@@ -35,7 +35,7 @@
 [짐코딩(float)](https://www.youtube.com/watch?v=nmCh-6iHHQI&list=PLlaP-jSd-nK-ponbKDjrSn3BQG9MgHSKv&index=28)  
 [ofcourse(float)](https://ofcourse.kr/css-course/float-%EC%86%8D%EC%84%B1)  
 [ofcourse(clear)](https://ofcourse.kr/css-course/clear-%EC%86%8D%EC%84%B1)  
-[디자이너스(float)](https://www.youtube.com/watch?v=JMX9FNoB6Cg&list=PLkbzizJk4Ae_ZCinIZzwLf4XDh1NvjmyE&index=14)  
+[디자인베이스(float)](https://www.youtube.com/watch?v=JMX9FNoB6Cg&list=PLkbzizJk4Ae_ZCinIZzwLf4XDh1NvjmyE&index=14)  
 
 ## 추가 내용
 
