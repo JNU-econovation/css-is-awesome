@@ -2,49 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title> 4주차 CSS 스터디 과제</title>
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+    --light-gray: hsl(204, 43%, 93%);
+    --cyan: hsl(179, 62%, 43%);
+    --off-cyan: hsla(179, 62%, 43%, 0.699);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      background-color: var(--light-gray);
+      padding: 5rem 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box{
+      border-radius: .3rem;
+      width: 40rem;
+    }
+
+    h3 {color: var(--cyan);}
+    .subtitle {color: var(--bright-yellow);}
+    .content {color: var(--grayish-blue);}
+
+    .top {
+      padding: 1.5rem 2rem;
+      background-color: #fff;
+      border-radius: .625rem .625rem 0 0;
+    }
+
+    .bottom{
+      display: flex;
+    }
+
+    .left-box {
+      background: var(--cyan);
+      padding: 1.5rem 2rem;
+      color: #fff;
+      width: 50%;
+      border-radius: 0 0 0 .625rem;
+    }
+
+    .white-text{
+      padding-bottom: 1rem;
+    }
+
+    .content p {
+      line-height: 0.8;
+    }
+
+    .right-box {
+      background: var(--off-cyan);
+      padding: 1rem 2rem;
+      color: #fff;
+      width: 50%;
+      border-radius: 0 0 .625rem 0;
+    }
+
+    .right-box p {
+      font-size: 0.8rem;
+    }
+
+    h4 {font-size: 1.2rem;}
+
+    .point {font-size: 1.5rem; font-weight: bold;}
+
+    .detail {font-size: .9rem;}
+
+    p {line-height: 0.7;}
+
+    .btn {
+      display: block;
+      text-align: center;
+      width: auto;
+      background: var(--bright-yellow);
+      padding: .9rem 1.25rem; 
+      border-radius: .5rem;
+    }
+
+    .btn:hover {
+      background: var(--light-gray);
+      color: var(--cyan);
+    }
+
   </style>
 </head>
+
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="box">
+    <div class="top">
+      <h3>Join our community</h3>
+      <div class="subtitle">30-day, hassle-free money back guarantee</div>
+      <div class="content">
+        <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+        <p>Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="left-box">
+        <h4>Monthly Subscription</h4>
+        <p>
+          <span class="point">&dollar;29</span>
+          <span class="sub-point">per month</span>
+        </p>
+        <p class="white-text">Full access for less than &dollar;1 a day</p>
+        <div class="btn">Sign Up</div>
+      </div>
+      <div class="right-box">
+        <h4>Why Us</h4>
+        <p>Tutorials by industry experts</p>
+        <p>Peer & expert code review</p>
+        <p>Coding exercises</p>
+        <p>Access to our GitHub repos</p>
+        <p>Community forum</p>
+        <p>Flashcard decks</p>
+        <p>New videos every week</p>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
