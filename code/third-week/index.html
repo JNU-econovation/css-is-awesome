@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #D8E1EE;
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      font-family: Karla;
+    }
+
+    main {
+      width: 40rem;
+    }
+
+    .p-12 {
+      padding: 2.5rem;
+    }
+
+    .text-cyan {
+      color: hsl(179, 62%, 43%);
+    }
+
+    .text-brightyellow {
+      color: hsl(71, 73%, 54%);
+    }
+
+    .text-lightgray {
+      color: hsl(204, 43%, 93%)
+    }
+
+    .text-brayishblue {
+      color: hsl(218, 22%, 67%)
+    }
+
+    .text-white {
+      color: #ffffff;
+    }
+
+    .bg-brightyellow {
+      background-color: hsl(71, 73%, 54%);
+    }
+
+    .bg-cyan {
+      background-color: hsl(179, 62%, 43%);
+    }
+
+    .bg-ligntcyan {
+      background-color: hsl(179, 61%, 55%);
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .w-half {
+      width: 50%;
+    }
+
+    .h-full {
+      height: 100%;
+    }
+
+    .font-bold {
+      font-weight: bold;
+    }
+
+    .text-xl {
+      font-size: 2rem;
+    }
+
+    .text-lg {
+      font-size: 1.2rem;
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .ml-2 {
+      margin-left: 0.5rem;
+    }
+
+    .round-2 {
+      border-radius: .5rem;
+    }
+
+    .round-t-2 {
+      border-radius: .5rem .5rem 0 0;
+    }
+
+    .round-bl-2 {
+      border-radius: 0 0 0 .5rem;
+    }
+
+    .round-br-2 {
+      border-radius: 0 0 .5rem;
+    }
+
+    .sign-up {
+      border: none;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .list div {
+      margin-bottom: .2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="bg-white p-12 round-t-2">
+      <div class="text-xl text-cyan mb-8 font-bold">
+        Join our community
+      </div>
+      <div class="font-bold text-brightyellow mb-4 text-lg">
+        30-day, hassle-free money back guarantee
+      </div>
+      <div class="text-brayishblue mb-2">
+        Gain access to our full library of tutorials along with expert code reviews.
+      </div>
+      <div class="text-brayishblue mb-2">
+        Perfect for any developers who are serious about honing their skills.
+      </div>
+    </section>
+    <section class="bg-cyan left w-half round-bl-2 text-lightgray">
+      <div class="p-12">
+        <div class="text-lg font-bold mb-8">Monthly Subscription</div>
+        <div class="mb-4">
+          <span class="font-bold text-xl text-white">&dollar;29</span>
+          <span class="ml-2">per month</span>
+        </div>
+        <div class="mb-8">
+          Full access for less than &dollar;1 a day
+        </div>
+        <button class="sign-up round-2 bg-brightyellow font-bold text-white">
+          Sign Up
+        </button>
+      </div>
+    </section>
+    <section class="bg-ligntcyan left w-half round-br-2 text-lightgray">
+      <div class="p-12">
+        <div class="text-lg font-bold mb-8">
+          Why Us
+        </div>
+        <div class="list">
+          <div>Tutorials by industry experts</div>
+          <div>Peer &amp; expert code review</div>
+          <div>Coding exercises</div>
+          <div>Access to our GitHub repos</div>
+          <div>Community forum</div>
+          <div>Flashcard decks</div>
+          <div>New videos every week</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
