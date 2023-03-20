@@ -62,7 +62,7 @@ footer {
 .title {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin-bottom: 20px;
 }
 .community.title {
@@ -81,7 +81,6 @@ footer {
 .why-text.basic-text {
     margin-bottom: 0;
 }
-
 .box {
     display: flex;
 }
