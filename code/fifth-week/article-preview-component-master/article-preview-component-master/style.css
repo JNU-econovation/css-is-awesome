@@ -1,0 +1,147 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent_box {
+    display: flex;
+    width: 47vw;
+    height: 35vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+
+.main_img {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.main_img img {
+    width: 25vw;
+    height: 35vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.right_box {
+    width: 60%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.right_box p:first-child {
+    color: hsl(217, 19%, 35%);
+    font-weight: bold;
+    margin: 0;
+}
+
+.right_box p:nth-child(2) {
+    color: hsl(214, 17%, 51%);
+    font-size: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.user_box {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.user_img {
+    width: 12%;
+    border-radius: 100%;
+    margin: 0rem 1rem 0 0;
+}
+
+.user_info p:first-child {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.user_info p:last-child {
+    font-size: 0.5rem;
+    margin-top: 0.2rem;
+    color: hsl(212, 23%, 69%);
+}
+
+.user_arrow {
+    padding: 0.5rem;
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+
+.hover:hover .chat_box {
+    visibility: visible;
+}
+
+.hover:hover .user_arrow {
+    background-color: hsl(217, 19%, 35%);
+
+}
+
+.hover:hover .user_arrow path {
+    fill: hsl(210, 46%, 95%);
+
+}
+
+
+
+
+.hover {
+    position: absolute;
+    right: -8rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.chat_box {
+    visibility: hidden;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 2.5rem;
+    position: relative;
+    bottom: 1.5rem;
+
+}
+
+.chat_box div {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+}
+
+.chat_box div,
+.chat_box svg {
+    margin-right: 1rem;
+}
+
+.chat_box:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 0.594em solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
+    border-bottom: 0;
+    margin-left: -0.594em;
+    margin-bottom: -0.594em;
+}
