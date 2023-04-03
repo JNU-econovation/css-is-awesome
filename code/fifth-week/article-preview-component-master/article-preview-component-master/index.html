@@ -2,35 +2,220 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>5주차 과제</title>
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+      --dark-gray-blue: hsl(217, 19%, 35%);
+      --desaturated-blue: hsl(214, 17%, 51%);
+      --gray-blue: hsl(212, 23%, 69%);
+      --light-gray-blue: hsl(210, 46%, 95%);
+    }
+
+    * {
+    padding: 0;
+    margin: 0;
+    }
+
+    body {
+      min-height: 100%;
+      background: var(--light-gray-blue);
+      font-family: "Manrope", sans-serif;
+      padding: 0 2.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    main {
+      max-width: 60rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0px 2.5rem 2.5rem -.625rem rgba(201, 213, 225, 0.503415);
+      display: flex;
+      
+    }
+
+    .left{
+      width: 320px;
+      object-fit: fill;
+      background-size: cover;
+      height: 20rem;
+    }
+
+    .top-box {
+      padding: 4.2rem 3.2rem 2.2rem;
+      width: 36rem;
+      background: #ffff;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      padding-bottom: 1.3rem;
+      color: var(--dark-gray-blue);
+    }
+
+    .top-box p {
+      font-size: 1.2rem;
+      letter-spacing: 0.7px;
+      line-height: 1.5;
+      color: var(--desaturated-blue);  
+    }  
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      background: #ffff;
+      padding: 1rem 3.2rem 2rem;
+    }
+
+    .profile{
+      display: flex;
+    }
+
+    .profile img {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+    }
+
+    .name-date {
+      padding-left: 1.5rem;
+      align-self: center;
+      font-size: 1rem;
+    }
+
+    h3 {
+      color: var(--dark-gray-blue);
+    }
+
+    time {
+      color: var(--gray-blue);
+      font-size: 1.2rem;
+    }
+
+    .share-button{
+      background: var(--light-gray-blue);
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+      margin-top: 0.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .share-content{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      background: var(--dark-gray-blue);
+      
+  
+    }
+
+    .share-button:hover{
+      background: var(--gray-blue);
+    }
+
+    .share-button:hover img {
+      filter: brightness(100);
+      transition: none;
+    }
+
+    ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    }
+
+    li {
+      padding-right: 1.5rem;
+    }
+    
+    .share-content p {
+      text-transform: uppercase;
+      color: var(--gray-blue);
+      font-size: 1.2rem;
+      letter-spacing: 0.5rem;
+      padding-right: 2rem;
+    }
+
   </style>
 </head>
+
 <body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="left">
+      <img 
+        src="./images/drawers.jpg"
+        alt="drawers"
+      />
+    </div>
+    <section>
+      <div class="top-box">
+        <h2>
+          Shift the overall look and feel by <br> 
+          adding these wonderful touches to <br> 
+          furniture in your home
+        </h2>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </p>
+      </div>
+      <footer>
+        <div class="profile">
+          <img
+            src="./images/avatar-michelle.jpg"
+            alt="michelle appleton"
+          />
+          <div class="name-date">
+            <h3>Michelle Appleton</h3>
+            <time datetime="2020-06-07">28 Jun 2020</time>
+          </div>
+        </div>
+        <div class="share-button">
+          <img src="./images/icon-share.svg" alt="share" />
+          <div class="share-content">
+            <p>SHARE</p>
+            <ul>
+              <li>
+                <a href="https://ko-kr.facebook.com/" target="_blank">
+                  <img src="./images/icon-facebook.svg" alt="facebook"/>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=ko" target="_blank">
+                  <img src="./images/icon-twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.co.kr/" target="_blank">
+                  <img src="./images/icon-pinterest.svg" alt="pinterest" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
 </body>
+
 </html>
