@@ -1,36 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <title>Frontend Mentor | Article preview component</title>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(210, 46%, 95%);
+      }
 
-  Michelle Appleton
-  28 Jun 2020
+      .article-container {
+        width: 55rem;
+        height: 20rem;
+        background-color: white;
+        border-radius: 0.8rem;
+        display: flex;
+      }
+      .left-section {
+        width: 40%;
+        border-radius: 0.8rem 0 0 0.8rem;
+      }
+      .right-section {
+        width: 60%;
+        margin: 2.5rem 3.3rem;
+        align-items: center;
+      }
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      .title {
+        font-size: 1.5rem;
+        font-family: "Outfit", sans-serif;
+        margin-bottom: 1.2rem;
+      }
+      .contents {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        color: hsl(217, 19%, 35%);
+      }
+      .writer-section {
+        display: flex;
+        align-items: center;
+      }
+      .writer-image {
+        width: 3.2rem;
+        height: 3.2em;
+        border-radius: 50%;
+      }
+
+      .write-info {
+        margin-left: 2rem;
+        align-items: center;
+        font-family: "Outfit", sans-serif;
+      }
+      .write-date {
+        color: hsl(212, 23%, 69%);
+      }
+      .share-button {
+        margin-left: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-container">
+      <img class="left-section" src="images/drawers.jpg" />
+      <div class="right-section">
+        <div class="title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </div>
+        <div class="contents">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </div>
+        <div class="writer-section">
+          <img class="writer-image" src="images/avatar-michelle.jpg" />
+          <div class="write-info">
+            <div class="writer-name">Michelle Appleton</div>
+            <div class="write-date">28 Jun 2020</div>
+          </div>
+          <div class="share-button">Share</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
