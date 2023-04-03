@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: #D8E1EE;
+      font-family: Karla;
+    }
+
+    main {
+      height: fit-content;
+      background-color: white;
+      border-radius: .5rem;
+    }
+
+    section {
+      width: 40rem;
+      padding: 2.5rem;
+    }
+
+    section.half {
+      width: 20rem;
+    }
+
+    section.half:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .column-block {
+      display: flex;
+      justify-content: space-between;
+      color: hsl(204, 43%, 93%);
+    }
+
+    .top .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: hsl(179, 62%, 43%);
+      margin-bottom: 1.5rem;
+    }
+
+    .top .subtitle {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: hsl(71, 73%, 54%);
+      margin-bottom: 1.5rem;
+    }
+
+    .top .content {
+      display: flex;
+      flex-direction: column;
+      color: hsl(218, 22%, 67%);
+      gap: .5rem;
+    }
+
+    .column-block section:first-child {
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0 0 0 .5rem;
+    }
+
+    .column-block section:last-child {
+      background-color: hsl(179, 68%, 45%);
+      border-radius: 0 0 .5rem;
+    }
+
+    .column-block .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .column-block .content {
+      display: flex;
+      flex-direction: column;
+      gap: .2rem;
+    }
+
+    .primary-button {
+      background-color: hsl(71, 73%, 54%);
+      color: hsl(204, 43%, 93%);
+      border: none;
+      border-radius: .2rem;
+      padding: .5rem;
+      font-size: 1.2rem;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .charge {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    .charge span:first-child {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="top">
+      <div class="title">Join our community</div>
+      <div class="subtitle">30-day, hassle-free money back guarantee</div>
+      <div class="content">
+        <div>Gain access to our full library of tutorials along with expert code reviews.</div>
+        <div>Perfect for any developers who are serious about honing their skills.</div>
+    </section>
+    <div class="column-block">
+      <section class="half">
+        <div>
+          <div class="title">Monthly Subscription</div>
+          <div class="charge">
+            <span>&dollar;29</span>
+            <span>per month</span>
+          </div>
+          <div class="content">Full access for less than &dollar;1 a day</div>
+        </div>
+        <input type="button" value="Sign Up" class="primary-button">
+      </section>
+      <section class="half">
+        <div class="title">Why Us</div>
+
+        <div class="content">
+          <div>Tutorials by industry experts</div>
+          <div>Peer &amp; expert code review</div>
+          <div>Coding exercises</div>
+          <div>Access to our GitHub repos</div>
+          <div>Community forum</div>
+          <div>Flashcard decks</div>
+          <div>New videos every week</div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
