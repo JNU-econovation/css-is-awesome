@@ -1,0 +1,135 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.color-blue {
+  background-color: aliceblue;
+}
+
+.content {
+  display: flex;
+  background-color: white;
+  width: 900px;
+  height: 40%;
+  border-radius: 0.5rem;
+}
+
+.container {
+  padding: 2.5rem;
+}
+
+.main-img img {
+  width: 24rem;
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-weight {
+  font-weight: 500;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.sub-size {
+  font-size: 1rem;
+}
+
+.profile {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.profile img {
+  margin-right: 1rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+}
+
+.name {
+  padding-bottom: 0.2rem;
+}
+
+.round-img {
+  width: 3rem;
+  border-radius: 10rem;
+}
+
+.share {
+  display: flex;
+  flex-grow: 0.3;
+  padding: 0.8rem;
+  border-radius: 10rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.share:hover svg path {
+  fill: white;
+}
+
+.popup {
+  display: none;
+  color: hsl(210, 46%, 95%);
+  letter-spacing: 0.8rem;
+  background-color: hsl(217, 19%, 35%);
+  padding: 0 2.5rem;
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 300px;
+  right: 250px;
+}
+
+.popup img {
+  margin: 0 0.5rem;
+}
+
+.share:hover .popup {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .main-img img {
+    width: 100%;
+    height: 18rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 450px;
+    height: 650px;
+    border-radius: 0.5rem;
+  }
+
+  .profile {
+    margin-top: 2rem;
+  }
+
+  .popup {
+    bottom: 130px;
+    right: 60px;
+  }
+}
