@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --very-dark-blue: hsl(233, 47%, 7%);
+      --dark-desaturated-blue: hsl(244, 38%, 16%);
+      --soft-violet: hsl(277, 64%, 61%);
+      --white: hsl(0, 0%, 100%);
+      --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+      --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--very-dark-blue);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+    }
+
+    article {
+      display: flex;
+      width: 70rem;
+      background-color: var(--dark-desaturated-blue);
+      border-radius: .5rem;
+    }
+
+    section {
+      flex: 1;
+    }
+
+    section:first-child {
+      border-radius: .5rem 0 0 .5rem;
+    }
+
+    section:last-child,
+    section:last-child img,
+    .img-color-change-layer {
+      border-radius: 0 .5rem .5rem 0;
+    }
+
+    .introdunction-text {
+      color: white;
+    }
+
+    .content-layer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 4rem 5rem 4rem 4rem;
+      height: calc(100% - 8rem);
+    }
+
+    .introdunction-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .introdunction-text .title {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    
+    .introdunction-text .title>.point {
+      color: var(--soft-violet);
+    }
+
+    .introdunction-text .content {
+      color: var(--slightly-transparent-white-2);
+      line-height: 150%;
+    }
+    
+    .scores {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 3rem;
+    }
+
+    .scores .score-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: .2rem;
+    }
+
+    .scores .score-text {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: .8rem;
+      color:var(--slightly-transparent-white-2);
+      text-transform: uppercase;
+    }
+
+    .introdunction-img {
+      position: relative;
+    }
+
+    .introdunction-img .img-color-change-layer {
+      background-color: hsl(277, 76%, 28%, .7);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="introdunction-text">
+      <div class="content-layer">
+        <div>
+          <div class="title">
+            Get <span class="point">insights</span> that help your business grow.
+          </div>
+          <div class="content">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.
+          </div>
+        </div>
+        <div class="scores">
+          <div class="score">
+            <div class="score-number">10k+</div>
+            <div class="score-text">companies</div>
+          </div>
+          <div class="score">
+            <div class="score-number">314</div>
+            <div class="score-text">templates</div>
+          </div>
+          <div class="score">
+            <div class="score-number">12m+</div>
+            <div class="score-text">queries</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="introdunction-img">
+      <img src="./images/image-header-desktop.jpg" alt="image-header-desktop">
+      <div class="img-color-change-layer"></div>
+    </section>
+  </article>
+
+</body>
+
+</html>
