@@ -1,0 +1,44 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.box {
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inner_box {
+    height: 22rem;
+    padding: 2rem;
+}
+
+.first_box {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.second_box {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third_box {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.inner_box p:nth-child(2n) {
+    color: hsl(0, 0%, 95%);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
