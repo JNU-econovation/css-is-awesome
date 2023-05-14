@@ -1,0 +1,138 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.main-text{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.shadow-box{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
+}
+
+/* container */
+
+.container{
+    max-width: 40rem;
+    max-height: 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container>div{
+    width: 100%;
+}
+
+/* top-box */
+.top-box{
+    background-color: #FFF;
+    padding: 2.5rem;
+    height: 13.5rem;
+}
+
+.top-box .main-text{
+    color: var(--bright-yellow);
+}
+
+.top-box h1{
+    font-size: 1.5rem;
+    color: var(--cyan);
+    margin-bottom: 1.8rem;
+}
+
+.top-box p{
+    color: var(--grayish-blue);
+    line-height: 1.6rem;
+}
+
+
+/* bottom-box */
+.bottom-box{
+    display: flex;
+    height: 16.5rem;
+}
+
+.bottom-box .main-text{
+    color: #FFF;
+}
+
+.bottom-box>div{
+    width: 50%;
+    height: 100%;
+    padding: 2.5rem;
+}
+
+/* subscription-box */
+.subscription-box {
+    background-color: var(--cyan);
+    color: #FFF;
+}
+
+.price-box{
+    display: flex;
+    color: var(--light-gray);
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.price{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #FFF;
+    margin-right: 1rem;
+}
+
+.sign-up{
+    background-color: var(--bright-yellow);
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+}
+
+
+/* why-box */
+.why-box{
+    background-color: var(--light-cyan);
+    color: var(--light-gray);
+}
+
+.why-box ul{
+    list-style: none;
+}
+
+.why-box ul>li {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
