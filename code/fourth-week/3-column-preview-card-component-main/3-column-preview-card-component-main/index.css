@@ -1,0 +1,116 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    font-size: 15px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+button{
+    box-sizing: border-box;
+}
+
+p{ line-height: 1.5rem;}
+
+/* font-style */
+.big-shoulders-display{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.lexend-deca{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+/* background */
+.bg-orange{ background-color: var(--bright-orange);}
+.bg-dark-cyan{ background-color: var(--dark-cyan);}
+.bg-very-dark-cyan { background-color: var(--very-dark-cyan);}
+.bg-white{ background-color: #fff;}
+
+/* font-size */
+.f1{ font-size: 2.3rem;}
+
+/* color */
+.color-orange{ color: var(--bright-orange);}
+.color-dark-cyan{ color: var(--dark-cyan);}
+.color-very-dark-cyan{ color: var(--very-dark-cyan);}
+.color-white{ color: var(--very-light-gray);}
+.color-very-light-gray{ color: var(--transparent-white);}
+
+/* round */
+.rond{border-radius: 6rem;}
+.arrondi{border-radius: 0.5rem;}
+
+/* alignment */
+.center-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-align {
+    display: flex;
+}
+.column-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+/* padding */
+.grand {padding: 1.3rem 3.3rem;}
+.moyen {padding: 1.1rem 2.5rem;}
+.petit {padding: 0.6rem 2rem;}
+
+/* border */
+.border-none{ border-style: none;}
+
+/* height width*/
+.large-box{
+    height: 33.3rem;
+    width: 20.6rem;
+}
+
+/* border */
+.bord-solid-light-gray-thin{ border: 0.15rem solid #fff;}
+
+/* hover: background */
+.hover-bg-orange:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+
+.hover-bg-dark-cyan:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+
+.hover-bg-very-dark-cyan:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
