@@ -1,0 +1,102 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+p {
+    color: white;
+    font-size: 1.4rem;
+    margin: 3rem;
+    opacity: 0.7;
+}
+
+button {
+    border-radius: 2rem;
+    background-color: white;
+    border: solid;
+    border-color: white;
+    width: 8rem;
+    height: 3rem;
+    margin: 4rem 4rem 5rem 4rem;
+}
+
+.entire-box {
+   margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    top: 50%;
+    bottom: 50%;
+}
+
+
+.button.first {
+    color: hsl(31, 77%, 52%);
+}
+
+button.first:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.button.second {
+    color: hsl(184, 100%, 22%);
+}
+
+button.second:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.button.third {
+    color: hsl(179, 100%, 13%);
+}
+
+button.third:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+.image-box {
+    margin: 3rem 4rem 2rem 3rem;
+}
+
+.first-box {
+    background-color: hsl(31, 77%, 52%);
+    width: 20%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.second-box {
+    background-color: hsl(184, 100%, 22%);
+    width: 20%;
+}
+
+.third-box {
+    background-color: hsl(179, 100%, 13%);
+    width: 20%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.type {
+    color: white;
+    font-size: 3rem;
+    margin: 4rem;
+}
+
+
